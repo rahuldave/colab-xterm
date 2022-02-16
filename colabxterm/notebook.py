@@ -74,7 +74,7 @@ def _xterm_magic(args_string):
             return s.connect_ex(('localhost', port)) == 0
 
     parsed_args = shlex.split(args_string, comments=True, posix=True)
-    height = 800
+    height = 400
     port = 10000
     while True:
         if not is_port_in_use(port):
